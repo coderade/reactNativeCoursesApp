@@ -1,38 +1,12 @@
-/**
- * Sample React Native App
- * https://github.com/facebook/react-native
- * @flow
- */
-
-import React, {Component} from 'react';
+import React from 'react';
 import {AppRegistry} from 'react-native';
-import App from "./src/components/ReactCourses";
+import ReactCourses from "./src/components/ReactCourses";
+import NativeCourses from "./src/components/NativeCourses";
 
-export default class reactNativeCoursesApp extends Component {
-    render() {
-        return (
-            <App/>
-        );
-    }
-}
-
-const styles = StyleSheet.create({
-    container: {
-        flex: 1,
-        justifyContent: 'center',
-        alignItems: 'center',
-        backgroundColor: '#F5FCFF',
-    },
-    welcome: {
-        fontSize: 20,
-        textAlign: 'center',
-        margin: 10,
-    },
-    instructions: {
-        textAlign: 'center',
-        color: '#333333',
-        marginBottom: 5,
-    },
+const reactNativeCoursesApp = StackNavigator({
+    ReactCourses: {screen: ReactCourses},
+    NativeCourses: {screen: NativeCourses}
 });
+
 
 AppRegistry.registerComponent('reactNativeCoursesApp', () => reactNativeCoursesApp);
