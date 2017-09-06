@@ -9,5 +9,4 @@ const reactNativeCoursesApp = StackNavigator({
     NativeCourses: {screen: NativeCourses}
 });
 
-
 AppRegistry.registerComponent('reactNativeCoursesApp', () => reactNativeCoursesApp);
