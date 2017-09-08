@@ -24,21 +24,17 @@ project.xcworkspace
 
 # Android/IntelliJ
 #
+build/
 .idea
 .gradle
 local.properties
 *.iml
-*.swp
 
 # node.js
 #
 node_modules/
 npm-debug.log
 yarn-error.log
-
-# Build files
-android/
-ios/
 
 # BUCK
 buck-out/
