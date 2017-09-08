@@ -9,8 +9,12 @@ const reactNativeCoursesApp = TabNavigator({
     NativeCourses: {screen: NativeCourses}
 }, {
     tabBarOptions: {
-        activeTintColor: '#e91e63',
-        swipeEnabled: true
+        activeTintColor: '#fff',
+        inactiveTintColor: '#80cbc4',
+        swipeEnabled: true,
+        style: {
+            backgroundColor: '#25a69a'
+        }
     }
 });
 

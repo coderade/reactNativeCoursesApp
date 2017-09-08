@@ -1,8 +1,10 @@
 import React, {Component} from 'react'
-import {StyleSheet, Text, View, ListView, Image, Linking} from 'react-native'
+import {Text, View, ListView, Image, Linking} from 'react-native'
 import Icon from 'react-native-vector-icons/MaterialIcons'
 import {getTheme} from 'react-native-material-kit'
+import styles from '../styles/styles';
 import data from '../data/courses.json'
+
 
 const theme = getTheme();
 
@@ -44,12 +46,12 @@ export default class ReactCourses extends Component {
                 <ListView
                     dataSource={dataSource}
                     renderRow={(rowData) =>
-                        <View style={theme.cardStyle}>
+                        <View style={[theme.cardStyle, styles.card]}>
                             <Image source={{uri: rowData.image}}
                                    style={theme.cardImageStyle}/>
-                            <Text style={theme.cardTitleStyle}>{rowData.title}</Text>
+                            <Text style={[theme.cardTitleStyle, styles.title]}>{rowData.title}</Text>
                             <Text style={theme.cardContentStyle}>{rowData.description}</Text>
-                            <Text style={theme.cardActionStyle}
+                            <Text style={[theme.cardActionStyle, styles.action]}
                                   onPress={() => {
                                       this.handleClick(rowData.link)
                                   }}>Tap to course</Text>
@@ -61,19 +63,3 @@ export default class ReactCourses extends Component {
     }
 }
 
-const styles = StyleSheet.create({
-    container: {
-        flex: 1,
-        backgroundColor: '#F5FCFF',
-        paddingTop: 10
-    },
-    welcome: {
-        fontSize: 20,
-        textAlign: 'center',
-        margin: 10
-    },
-    icon: {
-        width: 26,
-        height: 26
-    }
-});
