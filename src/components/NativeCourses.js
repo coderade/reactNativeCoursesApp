@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import {StyleSheet, Text, View, Button, ListView, Image} from 'react-native';
+import Icon from 'react-native-vector-icons/MaterialIcons';
 import data from '../data/courses.json';
 
 const ds = new ListView.DataSource({
@@ -10,7 +11,15 @@ const dataSource = ds.cloneWithRows(data);
 
 export default class NativeCourses extends Component {
     static navigationOptions = {
-        title: 'React Native Courses'
+        tabBarLabel: 'React Native Courses',
+        tabBarIcon: ({tinyColor}) => (
+            <Icon
+                name={'settings-cell'}
+                size={26}
+                style={{color: tinyColor}}
+            />
+        )
+
     };
 
     render() {
@@ -18,13 +27,7 @@ export default class NativeCourses extends Component {
 
         return (
             <View style={styles.container}>
-                <Text style={styles.welcome}>
-                    Welcome to React Native Courses App!
-                </Text>
-                <Button
-                    onPress={() => navigate('ReactCourses')}
-                    title="React Courses"
-                />
+                <Text style={styles.welcome}> React Native Courses </Text>
                 <ListView
                     dataSource={dataSource}
                     renderRow={(rowData) =>
@@ -32,7 +35,6 @@ export default class NativeCourses extends Component {
                             <Text>{rowData.title}</Text>
                             <Text>{rowData.description}</Text>
                             <Text>{rowData.views}</Text>
-                            <Button title="Link to course"/>
                             <Text>{rowData.link}</Text>
                             <Image source={{uri: rowData.image}}
                                    style={{width: 400, height: 200}}/>
@@ -54,7 +56,11 @@ const styles = StyleSheet.create({
     welcome: {
         fontSize: 20,
         textAlign: 'center',
-        margin: 10,
+        margin: 10
+    },
+    icon: {
+        width: 26,
+        height: 26
     }
 });
 

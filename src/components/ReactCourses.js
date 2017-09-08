@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import {StyleSheet, Text, View, Button, ListView, Image} from 'react-native';
+import Icon from 'react-native-vector-icons/MaterialIcons';
 import data from '../data/courses.json';
 
 const ds = new ListView.DataSource({
@@ -10,17 +11,22 @@ const dataSource = ds.cloneWithRows(data);
 
 export default class ReactCourses extends Component {
     static navigationOptions = {
-        title: 'React Courses'
+        tabBarLabel: 'React  Courses',
+        tabBarIcon: ({tinyColor}) => (
+            <Icon
+                name={'settings-cell'}
+                size={26}
+                style={{color: tinyColor}}
+            />
+        )
+
     };
 
     render() {
         const {navigate} = this.props.navigation;
         return (
             <View style={styles.container}>
-                <Button
-                    onPress={() => navigate('NativeCourses')}
-                    title="React Native Courses"
-                />
+                <Text style={styles.welcome}>React Courses</Text>
                 <ListView
                     dataSource={dataSource}
                     renderRow={(rowData) =>
@@ -28,7 +34,6 @@ export default class ReactCourses extends Component {
                             <Text>{rowData.title}</Text>
                             <Text>{rowData.description}</Text>
                             <Text>{rowData.views}</Text>
-                            <Button title="Link to course"/>
                             <Text>{rowData.link}</Text>
                             <Image source={{uri: rowData.image}}
                                    style={{width: 400, height: 200}}/>
@@ -50,6 +55,10 @@ const styles = StyleSheet.create({
     welcome: {
         fontSize: 20,
         textAlign: 'center',
-        margin: 10,
+        margin: 10
+    },
+    icon: {
+        width: 26,
+        height: 26
     }
 });
