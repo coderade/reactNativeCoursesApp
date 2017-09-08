@@ -1,7 +1,10 @@
-import React, {Component} from 'react';
-import {StyleSheet, Text, View, Button, ListView, Image} from 'react-native';
-import Icon from 'react-native-vector-icons/MaterialIcons';
-import data from '../data/courses.json';
+import React, {Component} from 'react'
+import {StyleSheet, Text, View, ListView, Image, Linking} from 'react-native'
+import Icon from 'react-native-vector-icons/MaterialIcons'
+import {getTheme} from 'react-native-material-kit'
+import data from '../data/courses.json'
+
+const theme = getTheme();
 
 const ds = new ListView.DataSource({
     rowHasChanged: (r1, r2) => r1 !== r2
@@ -22,6 +25,17 @@ export default class ReactCourses extends Component {
 
     };
 
+    handleClick = (link) => {
+        Linking.canOpenURL(link).then(supported => {
+                if (supported) {
+                    Linking.openURL(link);
+                } else {
+                    console.log("The device don't know how to open thes URL: " + link)
+                }
+            }
+        )
+    };
+
     render() {
         const {navigate} = this.props.navigation;
         return (
@@ -30,14 +44,15 @@ export default class ReactCourses extends Component {
                 <ListView
                     dataSource={dataSource}
                     renderRow={(rowData) =>
-                        <View>
-                            <Text>{rowData.title}</Text>
-                            <Text>{rowData.description}</Text>
-                            <Text>{rowData.views}</Text>
-                            <Text>{rowData.link}</Text>
+                        <View style={theme.cardStyle}>
                             <Image source={{uri: rowData.image}}
-                                   style={{width: 400, height: 200}}/>
-
+                                   style={theme.cardImageStyle}/>
+                            <Text style={theme.cardTitleStyle}>{rowData.title}</Text>
+                            <Text style={theme.cardContentStyle}>{rowData.description}</Text>
+                            <Text style={theme.cardActionStyle}
+                                  onPress={() => {
+                                      this.handleClick(rowData.link)
+                                  }}>Tap to course</Text>
                         </View>
                     }
                 />
