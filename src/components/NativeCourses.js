@@ -11,7 +11,10 @@ const ds = new ListView.DataSource({
     rowHasChanged: (r1, r2) => r1 !== r2
 });
 
-const dataSource = ds.cloneWithRows(data);
+const unnecessaryCourses =  new Set(['react']);
+filteredCourses = data.filter(obj => !unnecessaryCourses.has(obj.category));
+
+const dataSource = ds.cloneWithRows(filteredCourses);
 
 export default class NativeCourses extends Component {
     static navigationOptions = {
