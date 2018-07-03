@@ -6,3 +6,6 @@ patch:
   'npm:mime:20170907':
     - react-native > connect > serve-static > send > mime:
         patched: '2018-06-26T07:19:40.405Z'
+  'npm:lodash:20180130':
+    - react-native > plist > xmlbuilder > lodash:
+        patched: '2018-07-03T07:14:21.382Z'
