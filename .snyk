@@ -1,5 +1,5 @@
 # Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
-version: v1.12.0
+version: v1.13.5
 ignore: {}
 # patches apply the minimum changes required to fix a vulnerability
 patch:
@@ -9,3 +9,63 @@ patch:
   'npm:lodash:20180130':
     - react-native > plist > xmlbuilder > lodash:
         patched: '2018-07-03T07:14:21.382Z'
+  'npm:extend:20180424':
+    - react-native > metro-core > jest-haste-map > sane > fsevents > node-pre-gyp > request > extend:
+        patched: '2019-06-24T19:05:58.333Z'
+    - react-native > metro > metro-core > jest-haste-map > sane > fsevents > node-pre-gyp > request > extend:
+        patched: '2019-06-24T19:05:58.333Z'
+    - react-native > metro > metro-cache > metro-core > jest-haste-map > sane > fsevents > node-pre-gyp > request > extend:
+        patched: '2019-06-24T19:05:58.333Z'
+    - react-native > metro > jest-haste-map > sane > fsevents > node-pre-gyp > request > extend:
+        patched: '2019-06-24T19:05:58.333Z'
+  'npm:hoek:20180212':
+    - react-native > metro > jest-haste-map > sane > fsevents > node-pre-gyp > request > hawk > hoek:
+        patched: '2019-06-24T19:05:58.333Z'
+    - react-native > metro-core > jest-haste-map > sane > fsevents > node-pre-gyp > request > hawk > hoek:
+        patched: '2019-06-24T19:05:58.333Z'
+    - react-native > metro-core > jest-haste-map > sane > fsevents > node-pre-gyp > request > hawk > boom > hoek:
+        patched: '2019-06-24T19:05:58.333Z'
+    - react-native > metro > jest-haste-map > sane > fsevents > node-pre-gyp > request > hawk > boom > hoek:
+        patched: '2019-06-24T19:05:58.333Z'
+    - react-native > metro-core > jest-haste-map > sane > fsevents > node-pre-gyp > request > hawk > sntp > hoek:
+        patched: '2019-06-24T19:05:58.333Z'
+    - react-native > metro > jest-haste-map > sane > fsevents > node-pre-gyp > request > hawk > sntp > hoek:
+        patched: '2019-06-24T19:05:58.333Z'
+    - react-native > metro > metro-core > jest-haste-map > sane > fsevents > node-pre-gyp > request > hawk > hoek:
+        patched: '2019-06-24T19:05:58.333Z'
+    - react-native > metro > jest-haste-map > sane > fsevents > node-pre-gyp > request > hawk > cryptiles > boom > hoek:
+        patched: '2019-06-24T19:05:58.333Z'
+    - react-native > metro > metro-core > jest-haste-map > sane > fsevents > node-pre-gyp > request > hawk > boom > hoek:
+        patched: '2019-06-24T19:05:58.333Z'
+    - react-native > metro-core > jest-haste-map > sane > fsevents > node-pre-gyp > request > hawk > cryptiles > boom > hoek:
+        patched: '2019-06-24T19:05:58.333Z'
+    - react-native > metro > metro-cache > metro-core > jest-haste-map > sane > fsevents > node-pre-gyp > request > hawk > hoek:
+        patched: '2019-06-24T19:05:58.333Z'
+    - react-native > metro > metro-core > jest-haste-map > sane > fsevents > node-pre-gyp > request > hawk > sntp > hoek:
+        patched: '2019-06-24T19:05:58.333Z'
+    - react-native > metro > metro-cache > metro-core > jest-haste-map > sane > fsevents > node-pre-gyp > request > hawk > boom > hoek:
+        patched: '2019-06-24T19:05:58.333Z'
+    - react-native > metro > metro-cache > metro-core > jest-haste-map > sane > fsevents > node-pre-gyp > request > hawk > sntp > hoek:
+        patched: '2019-06-24T19:05:58.333Z'
+    - react-native > metro > metro-core > jest-haste-map > sane > fsevents > node-pre-gyp > request > hawk > cryptiles > boom > hoek:
+        patched: '2019-06-24T19:05:58.333Z'
+    - react-native > metro > metro-cache > metro-core > jest-haste-map > sane > fsevents > node-pre-gyp > request > hawk > cryptiles > boom > hoek:
+        patched: '2019-06-24T19:05:58.333Z'
+  'npm:stringstream:20180511':
+    - react-native > metro-core > jest-haste-map > sane > fsevents > node-pre-gyp > request > stringstream:
+        patched: '2019-06-24T19:05:58.333Z'
+    - react-native > metro > jest-haste-map > sane > fsevents > node-pre-gyp > request > stringstream:
+        patched: '2019-06-24T19:05:58.333Z'
+    - react-native > metro > metro-core > jest-haste-map > sane > fsevents > node-pre-gyp > request > stringstream:
+        patched: '2019-06-24T19:05:58.333Z'
+    - react-native > metro > metro-cache > metro-core > jest-haste-map > sane > fsevents > node-pre-gyp > request > stringstream:
+        patched: '2019-06-24T19:05:58.333Z'
+  'npm:tough-cookie:20170905':
+    - react-native > metro-core > jest-haste-map > sane > fsevents > node-pre-gyp > request > tough-cookie:
+        patched: '2019-06-24T19:05:58.333Z'
+    - react-native > metro > jest-haste-map > sane > fsevents > node-pre-gyp > request > tough-cookie:
+        patched: '2019-06-24T19:05:58.333Z'
+    - react-native > metro > metro-core > jest-haste-map > sane > fsevents > node-pre-gyp > request > tough-cookie:
+        patched: '2019-06-24T19:05:58.333Z'
+    - react-native > metro > metro-cache > metro-core > jest-haste-map > sane > fsevents > node-pre-gyp > request > tough-cookie:
+        patched: '2019-06-24T19:05:58.333Z'
