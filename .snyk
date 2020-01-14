@@ -1,5 +1,5 @@
 # Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
-version: v1.12.0
+version: v1.14.0
 ignore: {}
 # patches apply the minimum changes required to fix a vulnerability
 patch:
@@ -9,3 +9,110 @@ patch:
   'npm:lodash:20180130':
     - react-native > plist > xmlbuilder > lodash:
         patched: '2018-07-03T07:14:21.382Z'
+  'npm:extend:20180424':
+    - react-native > metro-core > jest-haste-map > sane > fsevents > node-pre-gyp > request > extend:
+        patched: '2019-06-24T19:05:58.333Z'
+    - react-native > metro > metro-core > jest-haste-map > sane > fsevents > node-pre-gyp > request > extend:
+        patched: '2019-06-24T19:05:58.333Z'
+    - react-native > metro > metro-cache > metro-core > jest-haste-map > sane > fsevents > node-pre-gyp > request > extend:
+        patched: '2019-06-24T19:05:58.333Z'
+    - react-native > metro > jest-haste-map > sane > fsevents > node-pre-gyp > request > extend:
+        patched: '2019-06-24T19:05:58.333Z'
+  'npm:hoek:20180212':
+    - react-native > metro > jest-haste-map > sane > fsevents > node-pre-gyp > request > hawk > hoek:
+        patched: '2019-06-24T19:05:58.333Z'
+    - react-native > metro-core > jest-haste-map > sane > fsevents > node-pre-gyp > request > hawk > hoek:
+        patched: '2019-06-24T19:05:58.333Z'
+    - react-native > metro-core > jest-haste-map > sane > fsevents > node-pre-gyp > request > hawk > boom > hoek:
+        patched: '2019-06-24T19:05:58.333Z'
+    - react-native > metro > jest-haste-map > sane > fsevents > node-pre-gyp > request > hawk > boom > hoek:
+        patched: '2019-06-24T19:05:58.333Z'
+    - react-native > metro-core > jest-haste-map > sane > fsevents > node-pre-gyp > request > hawk > sntp > hoek:
+        patched: '2019-06-24T19:05:58.333Z'
+    - react-native > metro > jest-haste-map > sane > fsevents > node-pre-gyp > request > hawk > sntp > hoek:
+        patched: '2019-06-24T19:05:58.333Z'
+    - react-native > metro > metro-core > jest-haste-map > sane > fsevents > node-pre-gyp > request > hawk > hoek:
+        patched: '2019-06-24T19:05:58.333Z'
+    - react-native > metro > jest-haste-map > sane > fsevents > node-pre-gyp > request > hawk > cryptiles > boom > hoek:
+        patched: '2019-06-24T19:05:58.333Z'
+    - react-native > metro > metro-core > jest-haste-map > sane > fsevents > node-pre-gyp > request > hawk > boom > hoek:
+        patched: '2019-06-24T19:05:58.333Z'
+    - react-native > metro-core > jest-haste-map > sane > fsevents > node-pre-gyp > request > hawk > cryptiles > boom > hoek:
+        patched: '2019-06-24T19:05:58.333Z'
+    - react-native > metro > metro-cache > metro-core > jest-haste-map > sane > fsevents > node-pre-gyp > request > hawk > hoek:
+        patched: '2019-06-24T19:05:58.333Z'
+    - react-native > metro > metro-core > jest-haste-map > sane > fsevents > node-pre-gyp > request > hawk > sntp > hoek:
+        patched: '2019-06-24T19:05:58.333Z'
+    - react-native > metro > metro-cache > metro-core > jest-haste-map > sane > fsevents > node-pre-gyp > request > hawk > boom > hoek:
+        patched: '2019-06-24T19:05:58.333Z'
+    - react-native > metro > metro-cache > metro-core > jest-haste-map > sane > fsevents > node-pre-gyp > request > hawk > sntp > hoek:
+        patched: '2019-06-24T19:05:58.333Z'
+    - react-native > metro > metro-core > jest-haste-map > sane > fsevents > node-pre-gyp > request > hawk > cryptiles > boom > hoek:
+        patched: '2019-06-24T19:05:58.333Z'
+    - react-native > metro > metro-cache > metro-core > jest-haste-map > sane > fsevents > node-pre-gyp > request > hawk > cryptiles > boom > hoek:
+        patched: '2019-06-24T19:05:58.333Z'
+  'npm:stringstream:20180511':
+    - react-native > metro-core > jest-haste-map > sane > fsevents > node-pre-gyp > request > stringstream:
+        patched: '2019-06-24T19:05:58.333Z'
+    - react-native > metro > jest-haste-map > sane > fsevents > node-pre-gyp > request > stringstream:
+        patched: '2019-06-24T19:05:58.333Z'
+    - react-native > metro > metro-core > jest-haste-map > sane > fsevents > node-pre-gyp > request > stringstream:
+        patched: '2019-06-24T19:05:58.333Z'
+    - react-native > metro > metro-cache > metro-core > jest-haste-map > sane > fsevents > node-pre-gyp > request > stringstream:
+        patched: '2019-06-24T19:05:58.333Z'
+  'npm:tough-cookie:20170905':
+    - react-native > metro-core > jest-haste-map > sane > fsevents > node-pre-gyp > request > tough-cookie:
+        patched: '2019-06-24T19:05:58.333Z'
+    - react-native > metro > jest-haste-map > sane > fsevents > node-pre-gyp > request > tough-cookie:
+        patched: '2019-06-24T19:05:58.333Z'
+    - react-native > metro > metro-core > jest-haste-map > sane > fsevents > node-pre-gyp > request > tough-cookie:
+        patched: '2019-06-24T19:05:58.333Z'
+    - react-native > metro > metro-cache > metro-core > jest-haste-map > sane > fsevents > node-pre-gyp > request > tough-cookie:
+        patched: '2019-06-24T19:05:58.333Z'
+  SNYK-JS-LODASH-450202:
+    - react-native > lodash:
+        patched: '2020-01-06T00:01:55.252Z'
+    - snyk > snyk-config > lodash:
+        patched: '2020-01-06T00:01:55.252Z'
+    - snyk > inquirer > lodash:
+        patched: '2020-01-06T00:01:55.252Z'
+    - react-native > @react-native-community/cli > lodash:
+        patched: '2020-01-06T00:01:55.252Z'
+    - react-native > inquirer > lodash:
+        patched: '2020-01-06T00:01:55.252Z'
+    - react-native > @react-native-community/cli > inquirer > lodash:
+        patched: '2020-01-06T00:01:55.252Z'
+    - snyk > snyk-nuget-plugin > dotnet-deps-parser > lodash:
+        patched: '2020-01-06T00:01:55.252Z'
+    - snyk > snyk-nodejs-lockfile-parser > graphlib > lodash:
+        patched: '2020-01-06T00:01:55.252Z'
+    - snyk > snyk-go-plugin > graphlib > lodash:
+        patched: '2020-01-06T00:01:55.252Z'
+    - snyk > @snyk/dep-graph > graphlib > lodash:
+        patched: '2020-01-06T00:01:55.252Z'
+    - react-native > @react-native-community/cli > metro > async > lodash:
+        patched: '2020-01-06T00:01:55.252Z'
+    - snyk > @snyk/snyk-cocoapods-plugin > @snyk/dep-graph > graphlib > lodash:
+        patched: '2020-01-06T00:01:55.252Z'
+    - snyk > @snyk/snyk-cocoapods-plugin > @snyk/cocoapods-lockfile-parser > @snyk/dep-graph > graphlib > lodash:
+        patched: '2020-01-06T00:01:55.252Z'
+    - react-native > @react-native-community/cli > metro-config > metro > async > lodash:
+        patched: '2020-01-06T00:01:55.252Z'
+    - react-native > metro-react-native-babel-transformer > metro-react-native-babel-preset > react-transform-hmr > react-proxy > lodash:
+        patched: '2020-01-06T00:01:55.252Z'
+    - react-native > @react-native-community/cli > metro > react-transform-hmr > react-proxy > lodash:
+        patched: '2020-01-06T00:01:55.252Z'
+    - react-native > @react-native-community/cli > metro > metro-react-native-babel-preset > react-transform-hmr > react-proxy > lodash:
+        patched: '2020-01-06T00:01:55.252Z'
+    - react-native > @react-native-community/cli > metro-react-native-babel-transformer > metro-react-native-babel-preset > react-transform-hmr > react-proxy > lodash:
+        patched: '2020-01-06T00:01:55.252Z'
+    - react-native > @react-native-community/cli > metro > metro-config > metro > async > lodash:
+        patched: '2020-01-06T00:01:55.252Z'
+    - react-native > @react-native-community/cli > metro-config > metro > react-transform-hmr > react-proxy > lodash:
+        patched: '2020-01-06T00:01:55.252Z'
+    - react-native > @react-native-community/cli > metro-config > metro > metro-react-native-babel-preset > react-transform-hmr > react-proxy > lodash:
+        patched: '2020-01-06T00:01:55.252Z'
+    - react-native > @react-native-community/cli > metro > metro-config > metro > react-transform-hmr > react-proxy > lodash:
+        patched: '2020-01-06T00:01:55.252Z'
+    - react-native > @react-native-community/cli > metro > metro-config > metro > metro-react-native-babel-preset > react-transform-hmr > react-proxy > lodash:
+        patched: '2020-01-06T00:01:55.252Z'
