@@ -11,7 +11,7 @@
   },
   "dependencies": {
     "react": "16.5.0",
-    "react-native": "0.64.0",
+    "react-native": "0.64.1",
     "react-native-material-kit": "^0.4.1",
     "react-native-vector-icons": "^6.4.1",
     "react-navigation": "^3.0.0",
