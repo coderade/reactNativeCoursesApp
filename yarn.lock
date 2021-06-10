@@ -6556,8 +6556,8 @@ normalize-path@^3.0.0:
   resolved "https://registry.yarnpkg.com/normalize-path/-/normalize-path-3.0.0.tgz#0dcd69ff23a1c9b11fd0978316644a0388216a65"
 
 normalize-url@^4.1.0:
-  version "4.5.0"
-  resolved "https://registry.yarnpkg.com/normalize-url/-/normalize-url-4.5.0.tgz#453354087e6ca96957bd8f5baf753f5982142129"
+  version "4.5.1"
+  resolved "https://registry.yarnpkg.com/normalize-url/-/normalize-url-4.5.1.tgz#0dd90cf1288ee1d1313b87081c9a5932ee48518a"
 
 npm-run-path@^2.0.0:
   version "2.0.2"
@@ -7285,9 +7285,9 @@ react-native-vector-icons@^6.4.1:
     prop-types "^15.6.2"
     yargs "^13.2.2"
 
-react-native@0.64.0:
-  version "0.64.0"
-  resolved "https://registry.yarnpkg.com/react-native/-/react-native-0.64.0.tgz#c3bde5b638bf8bcf12bae6e094930d39cb942ab7"
+react-native@0.64.1:
+  version "0.64.1"
+  resolved "https://registry.yarnpkg.com/react-native/-/react-native-0.64.1.tgz#cd38f5b47b085549686f34eb0c9dcd466f307635"
   dependencies:
     "@jest/create-cache-key-function" "^26.5.0"
     "@react-native-community/cli" "^5.0.1-alpha.0"
